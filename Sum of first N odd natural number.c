@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int i,j,k;
+	int i=1,n,s=0;
 	printf("Enter a natural number");
-	scanf("%d",&j);
-	printf("sum of odd natural number\n");
-	for(i=0;i<=j;i++)
+	scanf("%d",&n);
+	printf("sum of odd natural number is ");
+	while(i<=n)
 	{
-		k=i*2+1;
-		printf("%d\n",k);
+		s=s+2*i-1;
+		i++;
 	}
+		printf("%d\n",s);
 }
